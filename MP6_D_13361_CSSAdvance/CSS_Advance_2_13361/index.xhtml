@@ -1,0 +1,112 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Kegiatan</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>PENDAFTARAN KEGIATAN</h1>
+            <p>Temukan pengalaman baru dan kembangkan potensimu!</p>
+        </div>
+
+        <div id="informasi">
+            <h2>Formulir Peserta</h2>
+            <p>
+                Silakan isi formulir berikut dengan lengkap untuk
+                mendaftarkan diri pada kegiatan yang kamu pilih.
+                Pastikan informasi yang diberikan sudah benar.
+            </p>
+        </div>
+
+        <div id="form-container">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama"
+                           class="input-field" />
+                </div>
+
+                <div class="form-group">
+                    <label for="npm">Nomor Pokok Mahasiswa (NPM)</label>
+                    <input type="text" id="npm" name="npm"
+                           class="input-field" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat Email</label>
+                    <input type="text" id="email" name="email"
+                           class="input-field" />
+                </div>
+
+                <div class="form-group">
+                    <label for="telepon">Nomor Telepon</label>
+                    <input type="text" id="telepon" name="telepon"
+                           class="input-field" />
+                </div>
+
+                <div class="form-group">
+                    <label for="kegiatan">Pilih Kegiatan</label>
+                    <select id="kegiatan" name="kegiatan"
+                            class="input-field">
+                        <option value="">-- Pilih Kegiatan --</option>
+                        <option value="seminar">Seminar Mahasiswa</option>
+                        <option value="workshop">Workshop Kreatif</option>
+                        <option value="kompetisi">Kompetisi Akademik</option>
+                        <option value="volunteer">Kegiatan Sosial</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis Kelamin</label>
+                    <div class="radio-group">
+                        <label for="laki">
+                            <input type="radio" id="laki"
+                                   name="jenis_kelamin" value="laki-laki" />
+                            Laki-laki
+                        </label>
+
+                        <label for="perempuan">
+                            <input type="radio" id="perempuan"
+                                   name="jenis_kelamin" value="perempuan" />
+                            Perempuan
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="alasan">Alasan Mengikuti Kegiatan</label>
+                    <textarea id="alasan" name="alasan"
+                              rows="5" cols="40"></textarea>
+                </div>
+
+                <div class="form-group persetujuan">
+                    <label for="setuju">
+                        <input type="checkbox" id="setuju" name="setuju"
+                               value="ya" />
+                        Saya menyatakan bahwa data yang diisi sudah benar.
+                    </label>
+                </div>
+
+                <div class="tombol">
+                    <input type="submit" value="Daftar Sekarang"
+                           class="btn-daftar" />
+                    <input type="reset" value="Reset Form"
+                           class="btn-reset" />
+                </div>
+            </form>
+        </div>
+
+        <div id="footer">
+            <p>Mulai langkah baru dengan mengikuti kegiatan pilihanmu.</p>
+        </div>
+    </div>
+</body>
+
+</html>
